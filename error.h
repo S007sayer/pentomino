@@ -1,0 +1,13 @@
+#pragma once
+
+typedef enum {
+  ERROR_OPENING_FIELD_DEFINITION = 0x11,
+  ERROR_READING_ROW_SIZE = 0x12,
+  ERROR_READING_ROW_SYMBOL = 0x13,
+
+  ERROR_WRONG_DIMENSIONS = 0x21,
+  ERROR_WRONG_REGION = 0x22,
+  ERROR_TOO_MUCH_FREE_CELLS = 0x23
+} error_t;
+
+void fatal(error_t error);
